@@ -1,0 +1,10 @@
+{
+    "short_name" : "Main Focus",
+    "name" : "Main Focus",
+    "verson" : "1.0.0",
+    "manifest_version": 2,
+	"description": "Main Focus, Weather and Time.",
+	"chrome_url_overrides": {
+		"newtab": "index.html"
+	}
+}

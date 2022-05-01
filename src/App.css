@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html,
+body,
+.root {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0px auto;
+    min-width: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+
+.app {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0px;
+    min-width: 0px;
+}
+
+.component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 0%;
+    margin: 0px;
+    position: relative;
+}
+
+h1 {
+    padding: 0;
+    margin: 1rem;
+    font-size: 2.2rem;
+}
+
+
+
+input {
+    padding: 0.5rem;
+    width: 20rem;
+    height: 2rem;
+    color: #ffffff;
+    font-size: 1.7rem;
+}
+
+input,
+input:hover,
+input:focus,
+input:active {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: .15rem solid white;
+}
+
+.weather {
+    display: grid;
+    place-items: center;
+    grid-template-areas:
+        "icon   temperature"
+        "loca   loca";
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.weather>.icon {
+    text-align: center;
+    grid-area: icon;
+}
+
+.weather>.temperature {
+    grid-area: temperature;
+    font-size: xx-large;
+}
+
+.weather>.location {
+    grid-area: loca;
+}
+
+.weather img {
+    width: 65%;
+    height: 100%;
+}
+
+
+.clock>h1 {
+    font-size: 7rem;
+}
+
+.namegreeting>h1 {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.quoteauthor {
+    margin-top: 2.5rem;
+    padding: 0rem 2.5rem;
+}
+
+.addFocus>h1 {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.showFocus {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background: #ffffff;
+    outline: none;
+    border: none;
+    padding: .5rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width : 600px) {
+    .clock>h1 {
+        font-size: 5.5rem;
+    }
+
+    .namegreeting>h1 {
+        font-size: 2.2rem;
+    }
+
+
+    .addFocus>h1 {
+        font-size: 1.5rem;
+    }
+
+    .showFocus>h1 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 404px) {
+    .clock>h1 {
+        font-size: 3rem;
+    }
+
+    .namegreeting>h1 {
+        font-size: 1.5rem;
+    }
+
+
+}
