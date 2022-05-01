@@ -31,6 +31,7 @@ body,
     flex: 1 1 0%;
     margin: 0px;
     position: relative;
+    text-align: center;
 }
 
 h1 {
@@ -64,7 +65,7 @@ input:active {
     place-items: center;
     grid-template-areas:
         "icon   temperature"
-        "loca   loca";
+        "location   location";
     position: absolute;
     top: 2rem;
     right: 2rem;
@@ -81,7 +82,7 @@ input:active {
 }
 
 .weather>.location {
-    grid-area: loca;
+    grid-area: location;
 }
 
 .weather img {
@@ -116,6 +117,7 @@ input:active {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0rem 2rem;
 }
 
 button {
@@ -128,27 +130,92 @@ button {
     border-radius: 1rem;
 }
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width: 850px) {
+    .clock>h1 {
+        font-size: 5.8rem;
+    }
+
+    .namegreeting>h1 {
+        font-size: 2.3rem;
+    }
+
+    .inputFocus {
+        margin: 0;
+    }
+
+
+    input,
+    input:hover,
+    input:focus,
+    input:active {
+        padding: 0.2rem;
+        height: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .addFocus>h1 {
+        margin-top: 1.2rem;
+        font-size: 1.3rem;
+    }
+
+    .showFocus>h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width : 650px) {
+    .weather {
+        top: 0.5rem;
+        right: 1rem;
+    }
+
+    .weather>.temperature {
+        font-size: x-large;
+    }
+
+    .weather img {
+        width: 55%;
+        height: 90%;
+    }
+
+
     .clock>h1 {
         font-size: 5.5rem;
     }
 
     .namegreeting>h1 {
-        font-size: 2.2rem;
+        font-size: 1.9rem;
+    }
+
+    .inputFocus {
+        margin: 0;
     }
 
 
+    input,
+    input:hover,
+    input:focus,
+    input:active {
+        padding: 0.2rem;
+        height: 1rem;
+        font-size: 1.2rem;
+    }
+
     .addFocus>h1 {
-        font-size: 1.5rem;
+        margin-top: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .showFocus>h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        text-align: center;
     }
 
 }
 
-@media screen and (max-width: 404px) {
+@media screen and (max-width: 464px) {
     .clock>h1 {
         font-size: 3rem;
     }

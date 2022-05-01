@@ -28,7 +28,7 @@ const Focus = () => {
         return (
             <div className="addFocus">
                 <h1>What's your main focus for today ?</h1>
-                <h1>
+                <h1 className="inputFocus">
                     <input type="text" onKeyPress={handleAddFocus} />
                 </h1>
             </div>
@@ -39,7 +39,9 @@ const Focus = () => {
         return (
             <div className="showFocus">
                 <h1>My main focus today is {focus} </h1>
-                <button onClick={handleEditButton}>Edit</button>
+                <div>
+                    <button onClick={handleEditButton}>Edit</button>
+                </div>
             </div>
         );
     };
