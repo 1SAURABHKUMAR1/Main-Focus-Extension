@@ -1,9 +1,15 @@
 {
     "short_name" : "Main Focus",
     "name" : "Main Focus",
+    "author" :"Saurabh Kumar",
     "verson" : "1.0.0",
     "manifest_version": 2,
 	"description": "Main Focus, Weather and Time.",
+    "icons":{
+        "48" :"icon48.io",
+        "96" : "icon96.io",
+        "512" : "icon512.io"
+    },
 	"chrome_url_overrides": {
 		"newtab": "index.html"
 	}
