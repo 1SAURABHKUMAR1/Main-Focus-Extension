@@ -8,11 +8,20 @@ const Name = () => {
     const [username, setUsername] = useState('');
 
     useEffect(() => {
-        if (time.slice(0, -6) <= 11 && time.slice(-2) === 'AM') {
+        if (
+            time.slice(0, -6) <= 11 &&
+            (time.slice(-2) === 'AM' || time.slice(-2) === 'am')
+        ) {
             setGreeting('Good Morning');
-        } else if (time.slice(0, -6) < 6 && time.slice(-2) === 'PM') {
+        } else if (
+            time.slice(0, -6) < 6 &&
+            (time.slice(-2) === 'PM' || time.slice(-2) === 'pm')
+        ) {
             setGreeting('Good Afternoon');
-        } else if (time.slice(0, -6) <= 11 && time.slice(-2) === 'PM') {
+        } else if (
+            time.slice(0, -6) <= 11 &&
+            (time.slice(-2) === 'PM' || time.slice(-2) === 'pm')
+        ) {
             setGreeting('Good Evening');
         }
 
