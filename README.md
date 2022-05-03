@@ -15,7 +15,7 @@ A extension for main focus of day that shows time weather and opens in new tab
 
 # Try it
 
-[Add to firefox]() (Yet to Publish)
+[Add to firefox](https://addons.mozilla.org/en-US/firefox/addon/main-focus/)
 
 [Try in web version](https://main-focus.vercel.app/)
 
